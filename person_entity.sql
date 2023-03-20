@@ -19,7 +19,7 @@ CREATE TABLE placement_management_system.person (
 
 
 
-select * from administrator where person_id = 10028;
+-- select * from administrator where person_id = 10028;
 
 INSERT INTO person(person_id, first_name, middle_name, last_name, mobile_number, email, profile_photo, password_hash, nationality, person_role)
 VALUES 

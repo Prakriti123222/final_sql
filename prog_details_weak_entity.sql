@@ -16,7 +16,7 @@ CREATE TABLE prog_details (
 );
 
 -- select * from job_profile;
-drop table prog_details;
+-- drop table prog_details;
 
 insert into prog_details(job_id, no_of_pos_available, basic, hra, gross, other, take_home, ctc, program, parent_id) values
 ("0000000001", 2, 12200, 678979, 8768, 098756, 7889, 897998899, "BTECH", "0000000002"),

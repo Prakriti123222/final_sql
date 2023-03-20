@@ -1,8 +1,8 @@
 drop table job_profile;
 use placement_management_system;
 
-select * from hr where email_id = "prakriti.saroj@sppedlabs.in";
-select * from person where person_id = 10028;
+-- select * from hr where email_id = "prakriti.saroj@sppedlabs.in";
+-- select * from person where person_id = 10028;
 CREATE TABLE placement_management_system.job_profile(
 	job_id VARCHAR(50) PRIMARY KEY,
     job_designation VARCHAR(50) NOT NULL,
@@ -34,9 +34,9 @@ CREATE TABLE placement_management_system.job_profile(
     -- DEFAULT 0 constraint hr_interview check(hr_interviews>=0)
 );
 
-select * from job_profile;
+-- select * from job_profile;
 
-SELECT * FROM job_profile where cutoff_cpi<=8;
+-- SELECT * FROM job_profile where cutoff_cpi<=8;
 INSERT INTO job_profile(job_id, job_designation, job_description, job_location, cutoff_cpi, service_bond, terms_and_condition, six_month_intern_possibility, early_onboarding_possibility, particularly_early_onboarding_required,early_graduate_students_are_excluded, current_status, start_date, end_date, shortlist_from_resume,eligible_minor_disc,ppt ,eligible_major_disc,technical_test ,aptitude_test,psychometric_test,group_discussion,technical_interviews,hr_interviews)
 VALUES
 ("0000000001", "SDE", "", "Hyderabad",8.5, 1, "", 1, 1, 0, 1, "coding round", '2023-02-25', '2023-02-26', 1, "111111110000000", 1, "111111110000000", 1, 0,1,0,1,0),
@@ -59,7 +59,7 @@ VALUES
 ("00000000018", "SDE", "", "Pune",5.8, 0, "", 1, 1, 1, 0, "coding round", '2023-03-15', '2023-03-16', 1, "111111110000000", 1, "111111111000000", 0, 1,1,1,1,0),
 ("00000000019", "SDE", "", "Chennai",8, 0, "", 1, 0, 0, 1, "interview round", '2023-03-16', '2023-03-17', 1, "111111110000000", 1, "111111110000000", 0, 0,1,1,1,1);
 
-select * from job_profile where job_id = 6789999;
-select * from person where person_id=7887888;
+-- select * from job_profile where job_id = 6789999;
+-- select * from person where person_id=7887888;
 
 -- job_id = 6789999, person_id=7887888, company_id=8900879

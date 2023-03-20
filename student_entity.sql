@@ -21,7 +21,7 @@ CREATE TABLE student(
   FOREIGN KEY (parent_id) REFERENCES person(person_id)
 ); 
 
-select * from student;
+-- select * from student;
 
 INSERT INTO student (person_id, cpi, backlogs, category, gender, dob, professional_experience, personal_mail, year_of_graduation, current_program, cv, major_disciplines, minor_disciplines, date_of_joining,parent_id) VALUES
 (10000,2.28,true,NULL,'Female','2003-05-23',23,'100000@gmail.com',2026,'MTECH','0x123456789abcdef','100101100111000','000101100000001','2025-11-21',10000),

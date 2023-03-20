@@ -11,8 +11,8 @@ CREATE TABLE placement_management_system.hr (
    on update cascade
 );
 
-DELETE FROM hr WHERE email_id = 'abcdef345@gmail.com';
-Select * from hr where email_id = 'abcdef356@gmail.comm';
+-- DELETE FROM hr WHERE email_id = 'abcdef345@gmail.com';
+-- Select * from hr where email_id = 'abcdef356@gmail.comm';
 
 INSERT INTO placement_management_system.hr (email_id, hr_status, company_name, parent_id)
 values
