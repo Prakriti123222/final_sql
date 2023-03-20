@@ -9,9 +9,20 @@ CREATE TABLE placement_management_system.administrator(
 	FOREIGN KEY(parent_id) REFERENCES person(person_id)
 );
 
+ALTER TABLE address1 RENAME address;
+Alter table address rename address1;
+alter table admin rename administrator;
+
+select * from person where person_id = 11007890;
+DELETE FROM administrator WHERE person_id = 11007890;
+DELETE FROM person WHERE person_id = 11007890;
+select * from company_details where person_id=10008;
+select * from person where person_id=10008;
+
 INSERT INTO placement_management_system.administrator (person_id, designation, parent_id) VALUES
-(11007890,'Placement Coordinator',11007890),
-(11007891,'Placement Coordinator',11007891),
+(10028,'Head-CDS',10028),
+-- (11007890,'Placement Coordinator',11007890),
+-- (11007891,'Placement Coordinator',11007891),
 (10001,'Internal Coordinator',10001),
 (10002,'Technical Team Lead',10002),
 (10005,'Head-CDS',10005),
@@ -21,7 +32,6 @@ INSERT INTO placement_management_system.administrator (person_id, designation, p
 (10022,'Internal Coordinator',10022),
 (10025,'Social Media Lead',10025),
 (10026,'Faculty Coordinator-Internships',10026),
-(10028,'Head-CDS',10028),
 (10031,'Social Media Lead',10031),
 (10039,'Placement Coordinator',10039),
 (10040,'Technical Team Lead',10040),

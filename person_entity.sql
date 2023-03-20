@@ -19,10 +19,11 @@ CREATE TABLE placement_management_system.person (
 
 
 
-select * from person where person_id = 78878990;
+select * from administrator where person_id = 10028;
 
 INSERT INTO person(person_id, first_name, middle_name, last_name, mobile_number, email, profile_photo, password_hash, nationality, person_role)
 VALUES 
+(10028,'Joseph','Lee','Anderson','{"country_code": 1, "number": 1000000028}','Joseph28@gmail.com',"",'Joseph28111','Indian','admin'),
 (20110146,"John", "Doe", "", '{"country_code":1, "number":1234567890}', "johndoe@example.com", "", "password1", "American", "student"),
 (20110147,"Jane", "Smith", "", '{"country_code":1, "number":2345678901}', "janesmith@example.com", "", "password2", "Canadian", "student"),
 (20110148,"Alice", "Wong", "", '{"country_code":1, "number":3456789012}', "alicewong@example.com", "", "password3", "Chinese", "student"),
@@ -66,7 +67,6 @@ VALUES
 (10025,'Ava',NULL,'Evans','{"country_code": 0, "number": 1000025}','Ava25@gmail.com',"",'Ava25193','NULL','admin'),
 (10026,'Charles',NULL,'Young','{"country_code": 1, "number": 1000000026}','Charles26@gmail.com',"",'Charles26134','Korean','admin'),
 (10027,'Charlotte','Claire',NULL,'{"country_code": 0, "number": 1000027}','Charlotte27@gmail.com',"",'Charlotte27168','Australian','company_rep'),
-(10028,'Joseph','Lee','Anderson','{"country_code": 1, "number": 1000000028}','Joseph28@gmail.com',"",'Joseph28111','Indian','admin'),
 (10029,'Liam',NULL,NULL,'{"country_code": 0, "number": 1000029}','Liam29@gmail.com',"",'Liam29116','Polish','student'),
 (10030,'Charles',NULL,NULL,'{"country_code": 0, "number": 1000030}','Charles30@gmail.com',"",'Charles30165','NULL','student'),
 (10031,'Ida',NULL,'Clark','{"country_code": 1, "number": 1000000031}','Ida31@gmail.com',"",'Ida31189','Korean','admin'),

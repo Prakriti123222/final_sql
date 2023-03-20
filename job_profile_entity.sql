@@ -1,6 +1,8 @@
 drop table job_profile;
 use placement_management_system;
 
+select * from hr where email_id = "prakriti.saroj@sppedlabs.in";
+select * from person where person_id = 10028;
 CREATE TABLE placement_management_system.job_profile(
 	job_id VARCHAR(50) PRIMARY KEY,
     job_designation VARCHAR(50) NOT NULL,
@@ -58,5 +60,6 @@ VALUES
 ("00000000019", "SDE", "", "Chennai",8, 0, "", 1, 0, 0, 1, "interview round", '2023-03-16', '2023-03-17', 1, "111111110000000", 1, "111111110000000", 0, 0,1,1,1,1);
 
 select * from job_profile where job_id = 6789999;
+select * from person where person_id=7887888;
 
 -- job_id = 6789999, person_id=7887888, company_id=8900879
