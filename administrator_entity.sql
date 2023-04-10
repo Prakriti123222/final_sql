@@ -1,7 +1,6 @@
 use placement_management_system;
 DROP TABLE IF EXISTS placement_management_system.administrator; 
 
-
 CREATE TABLE placement_management_system.administrator(
     person_id int NOT NULL PRIMARY KEY,
     designation VARCHAR(50) NOT NULL,
@@ -9,7 +8,16 @@ CREATE TABLE placement_management_system.administrator(
 	FOREIGN KEY(parent_id) REFERENCES person(person_id)
 );
 
-A-- LTER TABLE address1 RENAME address;
+CREATE TABLE placement_management_system.std(
+    person_id int NOT NULL PRIMARY KEY,
+    namee VARCHAR(50) NOT NULL,
+    gender VARCHAR(50) NOT NULL,
+    marks int
+);
+SELECT * FROM person WHERE person_id='10111'-- ' AND password_hash=''';
+
+
+-- ALTER TABLE address1 RENAME address;
 -- Alter table address rename address1;
 -- alter table admin rename administrator;
 
@@ -19,7 +27,7 @@ A-- LTER TABLE address1 RENAME address;
 -- select * from company_details where person_id=10008;
 -- select * from person where person_id=10008;
 
-INSERT INTO placement_management_system.administrator (person_id, designation, parent_id) VALUES
+;INSERT INTO placement_management_system.administrator (person_id, designation, parent_id) VALUES
 (10028,'Head-CDS',10028),
 -- (11007890,'Placement Coordinator',11007890),
 -- (11007891,'Placement Coordinator',11007891),

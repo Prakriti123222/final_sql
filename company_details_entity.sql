@@ -1,10 +1,10 @@
 -- create database placement_management_system;
 use placement_management_system;
 DROP TABLE IF EXISTS placement_management_system.company_details; 
--- SELECT * FROM company_details WHERE job_id=0000000002;
+SELECT * FROM job_profile WHERE job_id=37886093;
 CREATE TABLE placement_management_system.company_details (
-  person_id int not null PRIMARY KEY,
-  job_id varchar(50) not null,
+  person_id int not null PRIMARY KEY, -- job_id
+  job_id varchar(50) not null,  -- person_id
   company_rep VARCHAR(50) NOT NULL,
   company_name VARCHAR(100) NOT NULL,
   website VARCHAR(100),
