@@ -1,10 +1,11 @@
 use placement_management_system;
+
 CREATE TABLE filters (
   job_id VARCHAR(50),
   job_profile varchar(50),
   job_category varchar(50),
   PRIMARY KEY (job_id),
-  FOREIGN KEY (job_id) REFERENCES job_profile(job_id)
+  constraint job_filters FOREIGN KEY (job_id) REFERENCES job_profile(job_id)
 );
 
 select * from filters;

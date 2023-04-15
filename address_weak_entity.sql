@@ -111,7 +111,7 @@ SELECT
     END AS address_line,
     p.person_id
 FROM person p;
-
+select * from person where person_id = 10111;
 SELECT * FROM address;
 
 
