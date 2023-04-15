@@ -14,8 +14,6 @@ CREATE TABLE placement_management_system.company_details (
   no_of_rooms_required VARCHAR(50)  NOT NULL,
   start_date date NOT NULL,
   end_date date NOT NULL,
-  -- CONSTRAINT chk_mem CHECK (no_of_members > 0),
---   CONSTRAINT chk_rooms CHECK ( no_of_rooms_required >= 0),
   parent_id int,
   parent_id_1 varchar(50),
   FOREIGN KEY(parent_id) REFERENCES person(person_id),

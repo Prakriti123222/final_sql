@@ -1,9 +1,6 @@
 create database placement_management_system;
 use placement_management_system;
 
--- SELECT * FROM person WHERE person_id='10111'-- ' AND password_hash=''';
-
--- table5
 CREATE TABLE placement_management_system.person (
     person_id int primary key,
     first_name VARCHAR(255) NOT NULL,
@@ -18,8 +15,6 @@ CREATE TABLE placement_management_system.person (
     nationality varchar(255),
     person_role VARCHAR(255)
 );
-
-select * from administrator where person_id = 10028;
 
 INSERT INTO person(person_id, first_name, middle_name, last_name, mobile_number, email, profile_photo, password_hash, nationality, person_role)
 VALUES 
