@@ -10,9 +10,9 @@ CREATE TABLE applies_to (
   FOREIGN KEY (job_id) REFERENCES job_profile(job_id)
 );
 
-select * from applies_to;
+-- select * from applies_to;
 
-select * from applies_to where person_id="21110142" and job_id="00000000015";
-select * from company_details where person_id="69929164"
+-- select * from applies_to where person_id="21110142" and job_id="00000000015";
+-- select * from company_details where person_id="69929164"
 
 
